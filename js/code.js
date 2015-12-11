@@ -1,10 +1,17 @@
+<<<<<<< e81727f6bd32bc28fdaad93ed26e0bfab77b75f2
 /*
+=======
+/* 
+>>>>>>> upd
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+<<<<<<< e81727f6bd32bc28fdaad93ed26e0bfab77b75f2
 
 
+=======
+>>>>>>> upd
 function fadeInner(element){ $(element).fadeIn(1000); }
 
 function fadeOuter(element){ $(element).fadeOut(1000); }
@@ -33,6 +40,10 @@ function cityShower(country) {
 function getRequest(city, country){
   $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + country + '&appid=2de143494c0b295cca9337e1e96b00e0', function success(data) {
     document.getElementById("cityName").innerHTML = data.name;
+<<<<<<< e81727f6bd32bc28fdaad93ed26e0bfab77b75f2
+=======
+    document.getElementById("cityIcon").innerHTML = '<img src="http://openweathermap.org/img/w/' + data.weather[0].icon +  '.png" alt="' + data.weather[0].main + '">'
+>>>>>>> upd
     document.getElementById("cityWeather").innerHTML = data.weather[0].main;
     if ((data.main.temp - 273) > 0){
       document.getElementById("cityTemp").innerHTML = '+' + parseFloat(data.main.temp - 273).toFixed(0) + ' °C';
@@ -58,6 +69,10 @@ function showUnitParams(){
 
 function getTableRequest(country){
   document.getElementById("tableCitySt").innerHTML = "";
+<<<<<<< e81727f6bd32bc28fdaad93ed26e0bfab77b75f2
+=======
+  document.getElementById("tableCityIcon").innerHTML = "";
+>>>>>>> upd
   document.getElementById("tableCityWeather").innerHTML = "";
   document.getElementById("tableCityTemp").innerHTML = "";
   $.getJSON('json/data.json', function success(data){
@@ -66,6 +81,10 @@ function getTableRequest(country){
         for (var cityID in data.country[countryID].cities){
           $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + data.country[countryID].cities[cityID] + ',' + data.country[countryID].code + '&appid=2de143494c0b295cca9337e1e96b00e0', function success(data) {
             document.getElementById("tableCitySt").innerHTML += '<th>' + data.name + '</th>';
+<<<<<<< e81727f6bd32bc28fdaad93ed26e0bfab77b75f2
+=======
+            document.getElementById("tableCityIcon").innerHTML += '<th><img src="http://openweathermap.org/img/w/' + data.weather[0].icon +  '.png" alt="' + data.weather[0].main + '"></th>';
+>>>>>>> upd
             document.getElementById("tableCityWeather").innerHTML += '<th>' + data.weather[0].main + '</th>';
             if ((data.main.temp - 273) > 0){
               document.getElementById("tableCityTemp").innerHTML += '<th>' + '+' + parseFloat(data.main.temp - 273).toFixed(0) + ' °C' + '</th>';
@@ -79,3 +98,7 @@ function getTableRequest(country){
     }
   });
 }
+<<<<<<< e81727f6bd32bc28fdaad93ed26e0bfab77b75f2
+=======
+
+>>>>>>> upd

@@ -15,6 +15,17 @@
           "cities": [
               "London"
           ]
+<<<<<<< e81727f6bd32bc28fdaad93ed26e0bfab77b75f2
+=======
+      },
+      {
+          "name": "USA",
+          "code": "us",
+          "cities": [
+              "New York",
+              "Los Angeles"
+          ]
+>>>>>>> upd
       }
   ]
 }
