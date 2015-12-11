@@ -1,0 +1,20 @@
+{
+  "country": [
+      {
+          "name": "Russia",
+          "code": "ru",
+          "cities": [
+              "Voronezh",
+              "Moscow",
+              "Vorkuta"
+          ]
+      },
+      {
+          "name": "United Kingdom",
+          "code": "uk",
+          "cities": [
+              "London"
+          ]
+      }
+  ]
+}

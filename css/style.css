@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 09.12.2015, 21:21:13
+    Author     : jobo
+*/
+
+/*General style*/
+
+html{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+}
+
+body{
+  background: #D8D8D8;
+  font-family: sans-serif;
+  min-height: 100%;
+  padding-top: 20px;
+  color: #4F5259;
+}
+
+p{
+  font-size: 14px;
+  color: #4F5259;
+}
+
+a{
+  text-decoration: none;
+  outline: none;
+  color: #D8D8D8;
+}
+
+a:hover{
+  text-decoration: underline;
+  outline: none;
+  color: #D8D8D8;
+}
+
+.wrap{
+  width: 960px;
+  height: 320px;
+  background: #EDEDED;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 72px 3px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 72px 3px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 72px 3px rgba(0,0,0,0.7);
+}
+
+/*Header*/
+
+.header{
+  height: 64px;
+  width: 810px;
+  background: #1A1E27;
+  color: #EDEDED;
+  line-height: 64px;
+  text-align: center;
+  float: right;
+}
+
+.header a{
+  height: 64px;
+  display: block;
+  font-size: 20px;
+}
+
+.header a:hover{
+  height: 64px;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  background: #292f3d;
+}
+
+/*SelectMode*/
+
+.selectMode{
+  height: 64px;
+  width: 150px;
+  background: #1A1E27;
+  color: #EDEDED;
+  line-height: 64px;
+  text-align: center;
+  float: right;
+}
+
+.selectMode #getTable{
+  height: 64px;
+  width: 75px;
+  display: block;
+  float: right;
+  background: #986767;
+}
+
+.selectMode #getTable:hover{
+  height: 64px;
+  width: 75px;
+  display: block;
+  text-decoration: none;
+  background: #7a5252;
+}
+
+.selectMode #getUnit{
+  height: 64px;
+  width: 75px;
+  display: block;
+  float: right;
+  background: #679867;
+}
+
+.selectMode #getUnit:hover{
+  height: 64px;
+  width: 75px;
+  display: block;
+  text-decoration: none;
+  background: #527a52;
+}
+
+/*Menu*/
+
+.menu{
+  width: 148px;
+  height: 236px;
+  text-align: center;
+  border-right: 2px dashed #1A1E27;
+  float: left;
+}
+
+/*Page*/
+
+.page{
+  width: 810px;
+  height: 236px;
+  text-align: center;
+  float: right;
+  font-size: 20px;
+}
+
+.page p{
+  font-size: 20px;
+}
+
+/*Footer*/
+
+.footer{
+  width: 960px;
+  height: 20px;
+  background: #1A1E27;
+  float: left;
+  line-height: 20px;
+}
+
+.footer a{
+  color: #EDEDED;
+  float: right;
+  padding-right: 10px;
+  font-size: 11px;
+}
